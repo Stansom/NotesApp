@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Notes</title>
+    <link rel="stylesheet" href="./assets/main.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/notes_favicon.png"/>
+    <link rel="icon" href="/assets/images/notes_favicon.png"/>
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body class="d-flex flex-column">
+<div class="container bgrnd-pattern-waves d-flex flex-column">
+    <header><h1 class="notes-logo text-white">NOTES</h1></header>
+    <main class="d-flex flex-column just-center self-align-center">
+        <div
+                class="note-container d-flex flex-column align-center self-align-center"
+        >
+
+            <div class="note-name mt-1" id="note-name"><input class="note-name-input" type="text"
+                                                              placeholder="Note Name"></div>
+            <textarea
+                    class="note-input-area mt-1"
+                    id="note-input-area"
+                    placeholder="put your note here"
+                    autofocus
+                    spellcheck="true"
+            ></textarea>
+
+            <div class="note-creation-date-text" id="note-creation-date-text">
+                Created at:
+                <p class="note-creation-date" id="note-creation-date">10-12-1987</p>
+            </div>
+        </div>
+        <div class="radio-container d-flex flex-row self-align-center">
+            <div class="note-delete-button" id="note-delete-button">X</div>
+            <ul class="radio-buttons-list d-flex mt-1">
+
+            </ul>
+        </div>
+    </main>
+</div>
+<script src="./assets/main.js"></script>
+</body>
+</html>

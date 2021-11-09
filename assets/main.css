@@ -1,0 +1,424 @@
+:root {
+    --list-background-color: #ADDF86;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 2rem;
+}
+
+main {
+    width: 90vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.notes-logo {
+    position: absolute;
+    font-family: 'Rowdies', serif;
+    font-style: normal;
+    font-size: 27px;
+    margin: 0.4rem 2.6rem;
+}
+
+.notes-logo::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 5.5rem;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.note-container {
+    position: relative;
+    width: 80vw;
+    height: 84vh;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--list-background-color);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-three-col {
+    grid-template-columns: 1fr 7fr 1fr 5%;
+}
+
+.just-items-stretch {
+    justify-items: stretch;
+}
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.self-align-center {
+    align-self: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mt-1 {
+    margin-top: 0.8rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-shadow-22 {
+    text-shadow: 2px 1px 1px #02002469, 4px 1px 5px #0200243a,
+        18px 1px 10px #0200246e;
+}
+
+.grad-ocean {
+    background: linear-gradient(330deg, #020024 0%, #097979 35%, #00d4ff 100%);
+}
+
+.grad-granat {
+    background: linear-gradient(63deg, rgba(71, 19, 19, 1) 0%, rgba(180, 98, 26, 1) 23%, rgba(210, 129, 36, 1) 67%, rgba(241, 87, 46, 1) 90%);
+}
+
+.bgrnd-pattern-waves {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(3) rotate(40)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(215, 0%, 100%, 0)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='0.2' stroke='hsla(0, 0%, 0%, 0.8)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>"), linear-gradient(63deg, rgba(71, 19, 19, 1) 0%, rgba(180, 98, 26, 1) 23%, rgba(210, 129, 36, 1) 67%, rgba(241, 87, 46, 1) 90%);
+    opacity: 0.9;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.full-width {
+    width: 100vw;
+}
+
+.content-box {
+    margin-top: 1rem;
+    height: 80vh;
+    width: 80vw;
+    border: 1px solid rgba(26, 30, 32, 0.603);
+    border-radius: 20px;
+}
+
+.box-shadow-5 {
+    -webkit-box-shadow: 5px 5px 10px -7px #42445a;
+    -moz-box-shadow: 5px 5px 10px -7px #42445a;
+    box-shadow: 5px 5px 10px -7px #42445a;
+}
+
+.input-container {
+    position: relative;
+    margin: 1rem auto;
+    max-width: 90%;
+}
+
+.description-text {
+    margin-bottom: 0.5rem;
+}
+
+.todo-list-item {
+    margin: 0.1rem auto;
+}
+
+.radio-container {
+    width: 70%;
+}
+
+.radio-buttons-list {
+    list-style: none;
+    justify-content: start;
+    width: 100%;
+}
+
+.radio-button-item {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--list-background-color);
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+.radio-button-item:last-child::after {
+    content: "+";
+    position: absolute;
+    font-size: 2.2rem;
+    line-height: 1.5rem;
+    left: 0.2rem;
+    color: black;
+    transform: scale(0);
+    transition: 0.15s ease-in;
+}
+.radio-button-item:last-child {
+   -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+   ;
+   -moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+   ;
+   box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+   ;
+    animation: pulsing 2s ease-in-out infinite;
+}
+
+
+
+@keyframes pulsing {
+    0% {
+
+        -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+        -moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+    }
+
+
+    50% {
+        -webkit-box-shadow: 0 0 0 3px rgba(182, 206, 224, 0.99), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+        -moz-box-shadow: 0 0 0 3px rgba(182, 206, 224, 0.99), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+        box-shadow: 0 0 0 3px rgba(182, 206, 224, 0.99), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+        -moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), inset 0 0 3px -1px rgba(0, 0, 0, 0.85);
+    }
+}
+
+.radio-button-item.noafter:hover:last-child::after {
+    content: none;
+}
+
+.radio-button-item:last-child:hover::after {
+    content: "+";
+    position: absolute;
+    font-size: 2.2rem;
+    line-height: 1.5rem;
+    left: 0.2rem;
+    color: black;
+    transform: scale(1);
+}
+
+.radio-button-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    bottom: 16px;
+    right: 0;
+    background-color: var(--list-background-color);
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.4s;
+
+}
+
+.radio-button-item[button-active]::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    bottom: 16px;
+    right: 0;
+    background-color: var(--list-background-color);
+    z-index: -1;
+    transform: scale(1);
+
+}
+
+.bottom-controls {
+    width: 90vw;
+    justify-content: flex-end;
+}
+
+.button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.5rem;
+    transition: 0.1s;
+}
+
+.button:hover {
+    transform: scale(0.97);
+}
+
+.button:active {
+    box-shadow: inset 1px 1px 5px 1px #000000;
+}
+
+.button-green {
+    background-color: #56af2d;
+}
+
+.button-red {
+    background-color: #da3333;
+}
+
+.note-name {
+    position: relative;
+}
+
+.note-name::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 8rem;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+}
+
+.note-name-input {
+    position: relative;
+    outline: none;
+    height: 26px;
+    font-family: Rajdhani, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    border: none;
+    width: 8rem;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.note-creation-date-text {
+    position: absolute;
+    font-family: Russo One, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    top: 76vh;
+    right: 8%;
+    align-self: flex-end;
+    color: #000000c0;
+    opacity: 0.5;
+}
+
+.note-creation-date {
+    font-size: 9px;
+    text-align: right;
+}
+
+.note-input-area {
+    padding: 0.5rem;
+    width: 90%;
+    height: 89%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 5px 2px 11px 3px rgba(0, 0, 0, 0.4);
+    resize: none;
+}
+
+.note-delete-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    top: 15%;
+    right: 16%;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.note-delete-button:hover {
+    color: rgb(243, 72, 72);
+}
+
+.note-delete-button:active {
+    transform: scale(1.1);
+}
